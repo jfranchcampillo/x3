@@ -1,0 +1,330 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+body{
+	font-family: montserrat;
+	font-style: normal;
+	overflow-x: hidden;
+
+}
+
+
+
+header{
+	width: 100%;
+	height: auto;
+	display: flex;
+	background-color: purple;
+}
+
+
+
+#logo{
+	width: 50%;
+	height: auto;
+	background-color: purple;
+}
+
+
+#logo img{
+         width: 20%;
+         padding-top: 2%;
+}
+
+
+nav{
+	width: 50%;
+	height: auto;
+}
+
+
+#menu{
+     width: auto;
+     display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style: none;
+	padding-top: 6vh;
+}
+
+
+.llistadelnav{
+             width: auto;
+             margin:0px, 10px;
+	        font-size: 1.2rem;
+
+	      /*  MESURA LLETRA RESPONSIVE:
+	          1 rem= 16px (NO S'ADAPRA PERÒ MILLOR)
+	          1vw
+	          1%
+	        px no s'adapta a les pantalles
+	        em càlculs matemàtics
+	        1vw*/
+}
+
+
+.llistadelnav a{
+               color: white;
+               text-decoration: none;
+}
+
+.llistadelnav a:hover{
+               text-decoration: underline;
+               text-decoration-thickness: 10%;
+}
+
+
+
+
+main{
+	width: 100%;
+	height: auto;
+	background-color: seagreen;
+}
+
+
+hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#Sobreaquestfestival{
+	width: 100%;
+	height: auto;
+	background-color: seagreen;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#abouttitol{
+    width: 50%;
+	height: auto;
+	padding:10%;
+
+	
+}
+
+
+#textabout{
+    width: 50%;
+    height: auto;
+    padding-right:40px;
+    padding:10%;
+
+}
+
+
+h2{
+   font-size: 3vw;
+   padding-bottom: 7px;
+
+}
+
+
+p{
+   font-size: 1.3vw;
+}
+
+
+footer{
+	width: 100%;
+	height: auto;
+	background-color: purple;
+	padding: 10%;
+	color: white;
+
+}
+
+.footercontenidor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footercolumn{
+	width: 25%;
+}
+
+
+
+/*.......................GRUP...........................*/
+
+#maincontenidor{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+	padding: 5% 10% 5% 10%;
+}
+
+
+.grup{
+	width: 40%;
+	height: auto;
+	object-fit: cover;
+	padding-bottom: 5%;
+}
+
+
+.grup img{
+	width: 100%;
+	height: auto;
+}
+
+
+.grup>h2, p{
+	padding-left: 2%;
+}
+
+
+
+
+/*................................................................*/
+
+/*.......................CONTACTE...........................*/
+
+.contacte{
+         width: 100%;
+         height: auto;
+         background-color: seagreen;
+         display: flex;
+	     flex-wrap: wrap;
+	     justify-content: space-between;
+	     flex-direction: row;
+	     padding: 5% 10% 5% 10%;
+}
+
+.formulari{
+	       width: 50%;
+}
+
+ul{
+   list-style: none;
+}
+
+li{
+	padding: 2%;
+}
+
+input{
+	width: 50%;
+}
+
+textarea{
+	width: 50%;
+}
+
+
+.mapa{
+	width: 50%;
+}
+
+
+
+
+/*................................................................*/
+
+
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction:column;
+        width: 100%;
+}
+ 
+     #logo{
+	width: auto;
+	height: auto;
+	background-color: purple;
+   }
+
+     #Sobreaquestfestival{
+     	flex-direction: column;
+     }
+
+     .footercontenidor{
+     	flex-direction: column;
+     }
+
+     .footercolumn{
+     	width: 100%;
+     	padding: 7%, 7%;
+     }
+
+     .footercolumn>h2{
+     	padding-top: 7%;
+     }
+
+
+
+
+
+     #maincontenidor{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+	padding: 5% 10% 5% 10%;
+	}
+
+	.grup{
+		width: 40%;
+		height: auto;
+		object-fit: cover;
+		padding-bottom: 5%;
+	}
+
+
+	.grup img{
+		width: 100%;
+		height: auto;
+	}
+
+
+	.grup>h2, p{
+		padding-left: 2%;
+	}
+
+    
+
+
+    .contacte{
+    	flex-direction: column;
+    }
+
+
+    .formulari{
+    	width: 100%;
+
+    }
+
+    .mapa{
+    	width: 100%;
+    }
+
+
+}
